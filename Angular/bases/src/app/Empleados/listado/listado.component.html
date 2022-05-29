@@ -1,0 +1,21 @@
+<h1>{{titulo}}</h1>
+
+<ul>
+    <button (click)="borrar()">Borrar</button>
+    <div *ngIf="etiquetaBorrado; else noBorrado">
+        <h3>Empleado borrado</h3>
+        <span>{{etiquetaBorrado}}</span>
+    </div>
+
+    <ng-template #noBorrado>
+        No se elimino ningún empleado.
+    </ng-template>
+
+    <li *ngFor="let item of empleados">
+       
+        {{item.nombres | titlecase}} {{item.apellidos | titlecase}}
+        {{item.direccion | uppercase}}
+        {{item.sueldo | currency}}
+        <hr />
+    </li>
+</ul>

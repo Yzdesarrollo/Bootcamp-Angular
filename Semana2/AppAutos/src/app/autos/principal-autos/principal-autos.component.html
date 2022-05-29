@@ -1,0 +1,39 @@
+<h1>Listado de Autos</h1>
+
+<div class="row">
+    <div class="col">
+        <!-- Listado -->
+      <app-listar-autos [autos]="autos"></app-listar-autos>
+    </div>
+    <br />
+    <div class="col">
+        <!-- Formulario -->
+        <fieldset>
+            <legend>Formulario de ingreso</legend>
+            <form (submit)="registrar()">
+                <label for="marca">Marca:</label>
+                <input 
+                    type="text" 
+                    name="marca" 
+                    id="marca"
+                    [(ngModel)]="nuevo.Marca"
+                />
+                <label for="modelo">Modelo:</label>
+                <input 
+                    type="text" 
+                    name="modelo" 
+                    id="modelo"
+                    [(ngModel)]="nuevo.Modelo"
+                />
+                <label for="precio">Precio:</label>
+                <input 
+                    type="text" 
+                    name="precio" 
+                    id="precio"
+                    [(ngModel)]="nuevo.Precio"
+                />
+                <button type="submit">Enviar</button>
+            </form>
+        </fieldset>
+    </div>
+</div>

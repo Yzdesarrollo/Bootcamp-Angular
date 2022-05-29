@@ -1,0 +1,37 @@
+<!--Conceptos:
+    Interpolación => {{}}
+    Property Binding => Eventos
+    Módulos => Crear un módulo por cada componente.
+    Pipes => Transformación de datos en la vista | titlecase | uppercase | currency |number
+    Directivas => ng-template(Se usa cuando va más de una condición), ngIf, ngFor
+    @Input() => Es un decorador que va en el selector del componente Indica que el componente que lo contiene esta listo para recibir datos de otros.
+    ngModel => Se debe importar el módulo de formularios (FormModule) en el módulo donde se va usar.
+
+    Al iniciar un proyecto:
+    1. Se crea el módulo ej: ng g m Clientes
+    2. Se importa en el módulo principal
+    3. Se crea el servicio ng g s Clientes/clientes
+    4. Se registra en providers del módulo el servicio
+    5. Se crea los componentes según se vayan necesitando ej: ng g c Clientes/listaClientes
+
+    Formularios - registro
+    1. (submit)="metodo($event)" reemplaza al => El action="" de un formulario
+        - El $event se debe escribir asi para ejecutar eventos dentro de la vista.
+    2. Importar el módulo FormsModule en el módulo donde estamos trabajando.
+    3. Crear dentro del módulo un directorio de interfaces exportables
+    4. Crear una instancia de la interfaz con sus propiedades (Modelo)
+    5. [(ngModel)] = "objeto.propiedad" Debe tener un name="" en los inputs del formulario.
+
+    Separacion de componentes
+    1. @Input() = Decorador para recibir datos de otro componente.
+    2. @Output() =  Decorador para eventos de envio de datos
+
+-->
+<!-- 
+
+<app-acumulador></app-acumulador>
+
+<app-empleado></app-empleado> -->
+
+<app-pagina-inicio></app-pagina-inicio>
+

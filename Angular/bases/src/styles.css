@@ -1,0 +1,39 @@
+html, body{
+    margin: 20px;
+    color: #3e4144;
+}
+
+button{
+    background-color: rgb(27, 163, 73);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+button:active{
+    transform: scale(.9);
+}
+
+.centrado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+input
+ {
+   display: block;
+   margin: 5px;
+ }
