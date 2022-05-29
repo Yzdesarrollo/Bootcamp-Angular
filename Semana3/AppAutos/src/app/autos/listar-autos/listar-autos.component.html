@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of autos">
+            <td>{{item.Marca | uppercase}}</td>
+            <td>{{item.Modelo}}</td>
+            <td>{{item.Precio | currency}} </td>
+        </tr>
+    </tbody>
+</table>

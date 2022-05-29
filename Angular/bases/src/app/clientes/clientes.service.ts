@@ -7,9 +7,7 @@ import { ICliente } from './interfaces/cliente';
 })
 export class ClientesService {
 
-  private _clientes: ICliente[] = [
- 
-  ]
+  private _clientes: ICliente[] = []
 
   get clientes(): ICliente[]{
     return this._clientes
@@ -22,6 +20,6 @@ export class ClientesService {
 
   constructor() {
     console.log('Servicio Inicializado');
-    this._clientes = JSON.parse(localStorage.getItem("clientes")!) || [];
+    this._clientes = JSON.parse(localStorage.getItem("clientes")!) || []; //Obteniendo lo está en localstorage
    }
 }
