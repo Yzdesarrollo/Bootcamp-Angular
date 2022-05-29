@@ -13,12 +13,6 @@ export class PrincipalAutosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  nuevo:IAuto = {
-    Marca:'',
-    Modelo:'',
-    Precio:0
-  }
-
   autos:IAuto[] = [
     {
       Marca:'Renault',
@@ -37,24 +31,10 @@ export class PrincipalAutosComponent implements OnInit {
     },
   ]
 
-  registrar(){
-    // e: any
-    //e.preventDefault();
-    //console.log(this.nuevo);
-    if(this.nuevo.Marca.trim().length === 0)
-      return;
-    if(this.nuevo.Modelo.trim().length === 0)
-      return;
-    if(this.nuevo.Precio === null)
-      return;
-
-    this.autos.push(this.nuevo)
-
-    this.nuevo = {
-      Marca : '',
-      Modelo : '',
-      Precio : 0
-    }
+  agregarNuevoAuto(auto: IAuto){
+    console.log('Se llama el emiter');
+    this.autos.push(auto);
   }
+ 
 
 }

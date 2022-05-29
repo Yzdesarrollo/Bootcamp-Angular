@@ -1,3 +1,7 @@
+.titulo-listado{
+  text-align: center;
+}
+
 .row{
     display: flex;
 }
@@ -7,12 +11,55 @@
     margin-right: 10px;
 }
 
+table.table{
+  border: 5px solid #ddd;
+  width: 70%;
+  height: 50%;
+  margin-left: 25px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+tr:hover {background-color: lightgrey;}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
 input
  {
    display: block;
    margin: 5px;
+   border: 2px solid lightgray;
+   border-radius: 10px;
+   padding: 5px;
  }
 
- .table{
-   border: 5px;
+button[type="submit"]{
+  padding: 5px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  width: 20%;
+  margin-top:3px;
+  margin-left:4px;
+}
+
+button[type="submit"]:hover{
+  background-color: gray;
+  color: white;
+}
+
+ .fieldset1
+ {
+     border:2px solid green;
+     -moz-border-radius:8px;
+     -webkit-border-radius:8px;	
+     border-radius:8px;	
  }

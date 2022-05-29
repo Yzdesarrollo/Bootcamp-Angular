@@ -1,4 +1,4 @@
-<h1>Listado de Autos</h1>
+<h1 class="titulo-listado">Concesionario de Autos</h1>
 
 <div class="row">
     <div class="col">
@@ -8,32 +8,6 @@
     <br />
     <div class="col">
         <!-- Formulario -->
-        <fieldset>
-            <legend>Formulario de ingreso</legend>
-            <form (submit)="registrar()">
-                <label for="marca">Marca:</label>
-                <input 
-                    type="text" 
-                    name="marca" 
-                    id="marca"
-                    [(ngModel)]="nuevo.Marca"
-                />
-                <label for="modelo">Modelo:</label>
-                <input 
-                    type="text" 
-                    name="modelo" 
-                    id="modelo"
-                    [(ngModel)]="nuevo.Modelo"
-                />
-                <label for="precio">Precio:</label>
-                <input 
-                    type="text" 
-                    name="precio" 
-                    id="precio"
-                    [(ngModel)]="nuevo.Precio"
-                />
-                <button type="submit">Enviar</button>
-            </form>
-        </fieldset>
+        <app-registrar-auto (onNuevoAuto)="agregarNuevoAuto($event)"></app-registrar-auto>
     </div>
 </div>
