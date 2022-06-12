@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <span>{{buscar}}</span>
+        <div class="col-8 p-3">
+            <input 
+            type="text" 
+            name="buscar" 
+            id="buscar"
+            placeholder="Buscar..."
+            class="form-control"
+            [(ngModel)]="buscar"
+            (keyup.enter)="busquedad()">
+        </div>
+    </div>
+</div>
