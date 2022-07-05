@@ -6,14 +6,14 @@ Console.WriteLine("Hello, World!");
 double altura = 1.88;
 
 System.Console.WriteLine($"La variable {nameof(altura)} tiene el valor de {altura}");
-uint numeroNatural = 23;
-int numeroEntero = -23;
-float numeroReal = 2.3f;
-double numeroRealDoble = 2.33333;
-decimal numeroDecimal = 0.1M;
-bool feliz = true;
+// uint numeroNatural = 23;
+// int numeroEntero = -23;
+// float numeroReal = 2.3f;
+// double numeroRealDoble = 2.33333;
+// decimal numeroDecimal = 0.1M;
+// bool feliz = true;
 var peso = 1.88;
-int? valor = null;
+//int? valor = null;
 
 System.Console.WriteLine($"Tipo de dato {nameof(peso)} es {peso.GetType()}");
 

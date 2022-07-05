@@ -1,0 +1,16 @@
+<h1>Pipes Básicos</h1>
+<h1>Otros</h1>
+<div class="contenedor">
+    <div class="contenedor-item">
+        <mat-card>
+            <mat-card-title>genero | i18nSelect</mat-card-title>
+            <mat-card-subtitle>{{genero | i18nSelect: bienvenidoMapa}} {{nombre}}</mat-card-subtitle>
+        </mat-card>
+    </div>   
+    <div class="contenedor-item">
+        <mat-card>
+            <mat-card-title>genero | i18nSelect</mat-card-title>
+            <mat-card-subtitle>Actualmente {{usuarios.length | i18nPlural: usuariosMapa}}.</mat-card-subtitle>
+        </mat-card>
+    </div>   
+</div>

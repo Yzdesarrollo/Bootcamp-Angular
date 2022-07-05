@@ -1,0 +1,42 @@
+<!--Usar Angular Material
+1. Crear el proyecto
+2. Agregar Angular Material
+3. Por cada componente de Material, se debe importar en el mòdulo principal.
+4. Separar material creando un módulo nuevo
+5. Se importa y se exporta en el módulo creado los componentes de material
+6. Se importa el módulo material en el módulo principal
+7. Se crea el componente y se exporta en el módulo que pertenece
+8. Siempre que se vaya usar material en otro módulo se debe importar asi ya este en módulo principal.
+-->
+
+<!--Usar el routing
+  1. Se crea un módulo para rutas ng g m app-router --flat
+  2. Se importa en el módulo creado 
+    - import { RouterModule, Routes } from '@angular/router';
+    - RouterModule.forRoot([])
+  3. Crear constante const routes: Routes = [];, RouterModule.forRoot(routes)
+  4. Ver app-router configuración de rutas
+  5. Exportar el modulo de rutas desde el módulo router
+  6. Se importa AppRouterModule en el módulo que se vaya a usar
+  7. Usar el routerLink con el nombre que se configuro <button mat-menu-item routerLink="">Básicos</button>
+  8. Adicionar 
+<router-outlet></router-outlet> en app.html
+-->
+
+<!--Configurar Idioma se realiza en el módulo principal
+  1. Se usa este import:  import { registerLocaleData } from '@angular/common';
+  2. Luego import localeEs from '@angular/common/locales/es-CO';
+  3. En providers   providers: [
+    {
+      provide: LOCALE_ID, useValue: 'es-CO'
+    }
+  ],
+-->
+
+<!--Uso de Pipes ver basicos, numeros y otros-->
+
+<app-header></app-header>
+<app-basicos></app-basicos>
+
+<router-outlet></router-outlet>
+
