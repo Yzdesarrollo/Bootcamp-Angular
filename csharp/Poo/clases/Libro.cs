@@ -2,25 +2,28 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Poo.clases;
 
 namespace Namespace
 {
-    public class Libro
+    public class Libro: Publicacion
     {
-        public string Titulo { get; set; }
-        public string Autor { get; set; }
-        public int Paginas { get; set; }
 
-        public Libro(string titulo, string autor, int paginas)
+       // public string Descripcion { get => $"Libro: {this.Titulo} escrito por {this.Autor}"; } //Propiedad de solo lectura
+
+        /**
+            BASE cuando quiero enviarle propiedades al constructor del padre
+        */
+        public Libro(string titulo, string autor, int paginas):base(titulo,autor,paginas)
         {
             this.Titulo = titulo;
             this.Autor = autor;
             this.Paginas = paginas;
         }
 
-        public string ObtenerDescripcion()
+        public override string ObtenerDescripcion()
         {
-            return $"{this.Titulo} escrito por {this.Autor}";
+            return $"Libro: {this.Titulo} escrito por {this.Autor} con {this.Paginas} pag.";
         }
     }
 }

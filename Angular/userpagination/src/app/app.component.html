@@ -1,0 +1,29 @@
+<!--
+1.  Se crea el proyecto con routing
+2.  Se crean los módulos a usar
+3.  Se importan los módulos en el módulo principal
+4.  Se crea el componente a usar y al módulo que pertenezca se exporta
+5.  En el módulo de material se importan y se exportan los componentes que se vayan usar de Angular Material.
+6.  En el módulo que se vaya usar los componentes de material se debe importar el módulo de material.
+7.  Configurar el routing el route es un arreglo de objetos.
+8.  Crear carpeta interfaces ya copiada la data en forma de interfaz en https://app.quicktype.io/
+
+
+USO DE LA CARPETA ENVIROMENT Y SERVICIOS API
+1.  Siempre existiran 2 archivos uno para desarrollo y otro para producción
+2.  Crear servicio de usuario
+3.  Registrar el servicio en el mòdulo usuarios en providers
+4.  Importar el HttpClient en el módulo principal (Forma global).
+5.  Injectar el HttpClient en el servicio
+6.  Crear una variable para recibir lo que viene de enviroment
+7.  Crear metodo para cada metodo http
+8.  Usar la clase params de HttpClient para los parametros en un api
+9.  Injectar el servicio en el componente a usar en este caso listado-usuarios.ts
+10. Para hacer uso del componente table de material se necesita 2 cosas:
+    - dataSource
+    - displayedColumns : es un arreglo.
+11. Para hacer uso del componente de paginación 
+-->
+
+<app-header></app-header>
+<router-outlet></router-outlet>
